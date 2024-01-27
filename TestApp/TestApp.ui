@@ -467,7 +467,7 @@
              </spacer>
             </item>
             <item>
-             <widget class="QToolButton" name="toolButton_12">
+             <widget class="QToolButton" name="tasksActions">
               <property name="text">
                <string>...</string>
               </property>
@@ -492,7 +492,7 @@
             </property>
             <layout class="QGridLayout" name="gridLayout_4">
              <item row="0" column="0">
-              <widget class="QListWidget" name="listWidget_3"/>
+              <widget class="QListWidget" name="tasksList"/>
              </item>
             </layout>
            </widget>
