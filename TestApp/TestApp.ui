@@ -241,6 +241,13 @@
             <property name="text">
              <string>...</string>
             </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>resources/images/Menu.png</normaloff>resources/images/Menu.png</iconset>
+            </property>
+            <property name="autoRaise">
+             <bool>true</bool>
+            </property>
            </widget>
           </item>
          </layout>
@@ -304,8 +311,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>398</width>
-           <height>388</height>
+           <width>386</width>
+           <height>349</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_6">
@@ -338,8 +345,8 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>290</width>
-              <height>213</height>
+              <width>244</width>
+              <height>244</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_5">
@@ -387,6 +394,13 @@
                   <property name="text">
                    <string>...</string>
                   </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>resources/images/Menu.png</normaloff>resources/images/Menu.png</iconset>
+                  </property>
+                  <property name="autoRaise">
+                   <bool>true</bool>
+                  </property>
                  </widget>
                 </item>
                </layout>
@@ -430,23 +444,85 @@
              </spacer>
             </item>
             <item>
-             <widget class="QToolButton" name="toolButton_10">
+             <widget class="QToolButton" name="createTaskButton">
               <property name="text">
                <string>...</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>resources/images/Plus.png</normaloff>resources/images/Plus.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="autoRaise">
+               <bool>true</bool>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QToolButton" name="toolButton_11">
+             <widget class="QToolButton" name="resumeTaskButton">
               <property name="text">
                <string>...</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>resources/images/Circled Play.png</normaloff>resources/images/Circled Play.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonIconOnly</enum>
+              </property>
+              <property name="autoRaise">
+               <bool>true</bool>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QToolButton" name="toolButton_9">
+             <widget class="QToolButton" name="pauseTaskButton">
               <property name="text">
                <string>...</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>resources/images/Pause Button.png</normaloff>resources/images/Pause Button.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="autoRaise">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="cancelTaskButton">
+              <property name="text">
+               <string>...</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>resources/images/Stop Circled.png</normaloff>resources/images/Stop Circled.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="autoRaise">
+               <bool>true</bool>
               </property>
              </widget>
             </item>
@@ -467,9 +543,22 @@
              </spacer>
             </item>
             <item>
-             <widget class="QToolButton" name="tasksActions">
+             <widget class="QToolButton" name="actionsTaskButton">
               <property name="text">
                <string>...</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>resources/images/Menu.png</normaloff>resources/images/Menu.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="autoRaise">
+               <bool>true</bool>
               </property>
              </widget>
             </item>
@@ -486,13 +575,17 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>261</width>
-              <height>165</height>
+              <width>319</width>
+              <height>177</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_4">
              <item row="0" column="0">
-              <widget class="QListWidget" name="tasksList"/>
+              <widget class="QListWidget" name="tasksList">
+               <property name="selectionMode">
+                <enum>QAbstractItemView::ExtendedSelection</enum>
+               </property>
+              </widget>
              </item>
             </layout>
            </widget>

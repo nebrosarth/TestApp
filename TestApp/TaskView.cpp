@@ -1,8 +1,8 @@
 #include "TaskView.h"
 
-TaskView::TaskView(std::shared_ptr<Task> thread, QWidget* parent)
+TaskView::TaskView(QWidget* parent)
 	: QWidget(parent)
-	, ui(new Ui::TaskViewClass()), m_thread(thread)
+	, ui(new Ui::TaskViewClass())
 {
 	ui->setupUi(this);
 }
@@ -10,4 +10,14 @@ TaskView::TaskView(std::shared_ptr<Task> thread, QWidget* parent)
 TaskView::~TaskView()
 {
 	delete ui;
+}
+
+void TaskView::setProgress(int value)
+{
+	ui->progressBar->setValue(value);
+}
+
+void TaskView::setText(const QString& text)
+{
+	ui->TaskTitle->setText(text);
 }

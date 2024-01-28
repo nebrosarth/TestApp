@@ -37,8 +37,8 @@
     <Import Project="$(QtMsBuild)\qt_defaults.props" />
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
-    <QtInstall>msvc2022_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtInstall>Qt5x64</QtInstall>
+    <QtModules>core;gui;widgets;concurrent</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
@@ -99,7 +99,7 @@
     <QtUic Include="TaskView.ui" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Task.h" />
+    <QtMoc Include="Task.h" />
     <QtMoc Include="TaskView.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

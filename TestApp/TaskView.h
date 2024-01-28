@@ -14,10 +14,11 @@ class TaskView : public QWidget
 	Q_OBJECT
 
 public:
-	TaskView(std::shared_ptr<Task> thread, QWidget* parent = nullptr);
+	TaskView(QWidget* parent = nullptr);
 	~TaskView();
+	void setProgress(int value);
+	void setText(const QString& text);
 
 private:
 	Ui::TaskViewClass *ui;
-	std::shared_ptr<Task> m_thread;
 };
