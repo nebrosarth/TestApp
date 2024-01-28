@@ -10,7 +10,6 @@ public:
 	void run() override;
 	bool isPaused() const;
 	bool isCanceled() const;
-	bool isFinished() const;
 	void pause();
 	void resume();
 	void cancel();
@@ -24,7 +23,6 @@ protected:
 protected:
 	bool m_paused = false;
 	bool m_canceled = false;
-	bool m_finished = false;
 
 	int m_numIterations = 0;
 };

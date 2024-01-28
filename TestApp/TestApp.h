@@ -23,21 +23,25 @@ public:
 
     void closeEvent(QCloseEvent* event) override;
 
-    void CreateTask();
-    void PauseSelectedTasks();
-    void ResumeSelectedTasks();
-    void CancelSelectedTasks();
-    void RemoveTask(TaskView* taskView);
+    void createTask();
+    void applyToSelectedTasks(std::function<void(Task*)> action);
+    void pauseSelectedTasks();
+    void resumeSelectedTasks();
+    void cancelSelectedTasks();
+    void removeTask(TaskView* taskView);
     void resumeAll();
 
 protected:
     void initWidgets();
     void initConnections();
-    void CloseLater();
+    void closeLater();
+
+    QThreadPool& pool();
+    std::unordered_map<TaskView*, std::unique_ptr<Task>>& tasks();
 
 private:
     bool m_closeLater = false;
     Ui::TestAppClass *ui;
     QThreadPool m_pool;
-    std::unordered_map<TaskView*, std::shared_ptr<Task>> m_tasks;
+    std::unordered_map<TaskView*, std::unique_ptr<Task>> m_tasks;
 };

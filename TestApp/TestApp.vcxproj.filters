@@ -71,8 +71,5 @@
     <QtUic Include="TaskView.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="Filter.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
   </ItemGroup>
 </Project>

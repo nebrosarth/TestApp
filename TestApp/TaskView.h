@@ -20,5 +20,5 @@ public:
 	void setText(const QString& text);
 
 private:
-	Ui::TaskViewClass *ui;
+	std::unique_ptr<Ui::TaskViewClass> ui;
 };

@@ -23,8 +23,6 @@ void Task::run()
 		QThread::msleep(100); // job: sleep mseconds
 	}
 
-	m_finished = true;
-
 	emit finished();
 }
 
@@ -36,11 +34,6 @@ bool Task::isPaused() const
 bool Task::isCanceled() const
 {
 	return m_canceled;
-}
-
-bool Task::isFinished() const
-{
-	return m_finished;
 }
 
 void Task::pause()
