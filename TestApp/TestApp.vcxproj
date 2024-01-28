@@ -89,8 +89,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Section\Section.cpp" />
     <ClCompile Include="TaskView.cpp" />
     <QtRcc Include="TestApp.qrc" />
+    <QtUic Include="Filter.ui" />
     <QtUic Include="TestApp.ui" />
     <QtMoc Include="TestApp.h" />
     <ClCompile Include="Task.cpp" />
@@ -101,6 +103,9 @@
   <ItemGroup>
     <QtMoc Include="Task.h" />
     <QtMoc Include="TaskView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Section\Section.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

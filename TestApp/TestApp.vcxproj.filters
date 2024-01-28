@@ -21,6 +21,12 @@
       <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
       <Extensions>ts</Extensions>
     </Filter>
+    <Filter Include="Source Files\Section">
+      <UniqueIdentifier>{169297bb-eb38-4923-a02d-3e2c50e3987a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Section">
+      <UniqueIdentifier>{15f6d74e-6c59-43a9-b1a9-82b9ec4e84d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="TestApp.qrc">
@@ -46,6 +52,9 @@
     <ClCompile Include="TaskView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Section\Section.cpp">
+      <Filter>Source Files\Section</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="TaskView.h">
@@ -54,9 +63,15 @@
     <QtMoc Include="Task.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="Section\Section.h">
+      <Filter>Header Files\Section</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="TaskView.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Filter.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

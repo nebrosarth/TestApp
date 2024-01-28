@@ -31,6 +31,7 @@ public:
     void resumeAll();
 
 protected:
+    void initWidgets();
     void initConnections();
     void CloseLater();
 

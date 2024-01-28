@@ -2,6 +2,7 @@
 #include <QtConcurrent>
 #include <qevent.h>
 #include <QMessageBox>
+#include "Section/Section.h"
 
 TestApp::TestApp(QWidget* parent)
 	: QWidget(parent)
@@ -9,11 +10,7 @@ TestApp::TestApp(QWidget* parent)
 {
 	ui->setupUi(this);
 
-	ui->splitter->setSizes(QList<int>({ INT_MAX, INT_MAX }));
-	ui->splitter_2->setSizes(QList<int>({ INT_MAX, INT_MAX }));
-
-	ui->textEdit->setText("Qt is used for developing graphical user interfaces (GUIs) and multi-platform applications that run on all major desktop platforms and mobile or embedded platforms. Most GUI programs created with Qt have a native-looking interface, in which case Qt is classified as a widget toolkit. Non-GUI programs can also be developed, such as command-line tools and consoles for servers. An example of such a non-GUI program using Qt is the Cutelyst web framework. Qt supports various compilers, including the GCC and Clang C++ compilers, the Visual Studio suite, Python via Python bindings, PHP via an extension for PHP5, and has extensive internationalization support.Qt also provides Qt Quick, that includes a declarative scripting language called QML that allows using JavaScript to provide the logic.With Qt Quick, rapid application development for mobile devices became possible, while logic can still be written with native code as well to achieve the best possible performance. Other features include SQL database access, XML parsing, JSON parsing, thread management and network support.");
-
+	initWidgets();
 	initConnections();
 }
 
@@ -153,6 +150,36 @@ void TestApp::resumeAll()
 	}
 }
 
+void TestApp::initWidgets()
+{
+	ui->splitter->setSizes(QList<int>({ INT_MAX, INT_MAX }));
+	ui->splitter_2->setSizes(QList<int>({ INT_MAX, INT_MAX }));
+
+
+	QListWidget* listWidget1 = new QListWidget(this);
+	QVBoxLayout* layout1 = new QVBoxLayout(this);
+	layout1->addWidget(listWidget1);
+
+	// Section 1
+	ui::Section* properties = new ui::Section(u8"Свойства", 300, this);
+	properties->setContentLayout(*layout1);
+
+	ui->filtersLayout->addWidget(properties);
+
+	// Section 2
+	QListWidget* listWidget2 = new QListWidget(this);
+	QVBoxLayout* layout2 = new QVBoxLayout(this);
+	layout2->addWidget(listWidget2);
+
+	ui::Section* filtersAndSearch = new ui::Section(u8"Фильтры и поиск", 300, this);
+	filtersAndSearch->setContentLayout(*layout2);
+
+	ui->filtersLayout->addWidget(filtersAndSearch);
+
+	QSpacerItem* spacer = new QSpacerItem(0, 0, QSizePolicy::Minimum, QSizePolicy::Expanding);
+	ui->filtersLayout->addSpacerItem(spacer);
+}
+
 void TestApp::initConnections()
 {
 	// UI
@@ -170,9 +197,7 @@ void TestApp::initConnections()
 		});
 
 	// Tasks
-	connect(ui->createTaskButton, &QToolButton::pressed, [this]() {
-		CreateTask();
-		});
+	connect(ui->createTaskButton, &QToolButton::pressed, this, &TestApp::CreateTask);
 	connect(ui->resumeTaskButton, &QToolButton::pressed, this, &TestApp::ResumeSelectedTasks);
 	connect(ui->pauseTaskButton, &QToolButton::pressed, this, &TestApp::PauseSelectedTasks);
 	connect(ui->cancelTaskButton, &QToolButton::pressed, this, &TestApp::CancelSelectedTasks);
