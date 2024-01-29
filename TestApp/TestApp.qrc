@@ -1,4 +1,13 @@
 <RCC>
-    <qresource prefix="TestApp">
-    </qresource>
+  <qresource prefix="TestApp">
+    <file>resources/images/Submit Document.png</file>
+    <file>resources/images/Check File.png</file>
+    <file>resources/images/Circled Play.png</file>
+    <file>resources/images/Document.png</file>
+    <file>resources/images/Menu.png</file>
+    <file>resources/images/Opened Folder.png</file>
+    <file>resources/images/Pause Button.png</file>
+    <file>resources/images/Plus.png</file>
+    <file>resources/images/Stop Circled.png</file>
+  </qresource>
 </RCC>

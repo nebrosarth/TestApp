@@ -299,8 +299,8 @@
            <string>...</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>resources/images/Document.png</normaloff>resources/images/Document.png</iconset>
+           <iconset resource="TestApp.qrc">
+            <normaloff>:/TestApp/resources/images/Document.png</normaloff>:/TestApp/resources/images/Document.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -319,8 +319,8 @@
            <string>...</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>resources/images/Opened Folder.png</normaloff>resources/images/Opened Folder.png</iconset>
+           <iconset resource="TestApp.qrc">
+            <normaloff>:/TestApp/resources/images/Opened Folder.png</normaloff>:/TestApp/resources/images/Opened Folder.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -339,8 +339,8 @@
            <string>...</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>resources/images/Submit Document.png</normaloff>resources/images/Submit Document.png</iconset>
+           <iconset resource="TestApp.qrc">
+            <normaloff>:/TestApp/resources/images/Submit Document.png</normaloff>:/TestApp/resources/images/Submit Document.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -359,8 +359,8 @@
            <string>...</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>resources/images/Check File.png</normaloff>resources/images/Check File.png</iconset>
+           <iconset resource="TestApp.qrc">
+            <normaloff>:/TestApp/resources/images/Check File.png</normaloff>:/TestApp/resources/images/Check File.png</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -521,8 +521,8 @@
              <string>...</string>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>resources/images/Menu.png</normaloff>resources/images/Menu.png</iconset>
+             <iconset resource="TestApp.qrc">
+              <normaloff>:/TestApp/resources/images/Menu.png</normaloff>:/TestApp/resources/images/Menu.png</iconset>
             </property>
             <property name="autoRaise">
              <bool>true</bool>
@@ -550,16 +550,16 @@
            <string>Проект</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>resources/images/Opened Folder.png</normaloff>resources/images/Opened Folder.png</iconset>
+           <iconset resource="TestApp.qrc">
+            <normaloff>:/TestApp/resources/images/Opened Folder.png</normaloff>:/TestApp/resources/images/Opened Folder.png</iconset>
           </property>
           <item>
            <property name="text">
             <string>HDD PC1</string>
            </property>
            <property name="icon">
-            <iconset>
-             <normaloff>resources/images/Opened Folder.png</normaloff>resources/images/Opened Folder.png</iconset>
+            <iconset resource="TestApp.qrc">
+             <normaloff>:/TestApp/resources/images/Opened Folder.png</normaloff>:/TestApp/resources/images/Opened Folder.png</iconset>
            </property>
           </item>
           <item>
@@ -636,8 +636,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>343</width>
-           <height>419</height>
+           <width>313</width>
+           <height>85</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_6">
@@ -665,7 +665,7 @@
               <x>0</x>
               <y>0</y>
               <width>258</width>
-              <height>309</height>
+              <height>643</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_5">
@@ -781,8 +781,8 @@
                    <string>...</string>
                   </property>
                   <property name="icon">
-                   <iconset>
-                    <normaloff>resources/images/Menu.png</normaloff>resources/images/Menu.png</iconset>
+                   <iconset resource="TestApp.qrc">
+                    <normaloff>:/TestApp/resources/images/Menu.png</normaloff>:/TestApp/resources/images/Menu.png</iconset>
                   </property>
                   <property name="autoRaise">
                    <bool>true</bool>
@@ -920,8 +920,8 @@
                <string>...</string>
               </property>
               <property name="icon">
-               <iconset>
-                <normaloff>resources/images/Plus.png</normaloff>resources/images/Plus.png</iconset>
+               <iconset resource="TestApp.qrc">
+                <normaloff>:/TestApp/resources/images/Plus.png</normaloff>:/TestApp/resources/images/Plus.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -940,8 +940,8 @@
                <string>...</string>
               </property>
               <property name="icon">
-               <iconset>
-                <normaloff>resources/images/Circled Play.png</normaloff>resources/images/Circled Play.png</iconset>
+               <iconset resource="TestApp.qrc">
+                <normaloff>:/TestApp/resources/images/Circled Play.png</normaloff>:/TestApp/resources/images/Circled Play.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -963,8 +963,8 @@
                <string>...</string>
               </property>
               <property name="icon">
-               <iconset>
-                <normaloff>resources/images/Pause Button.png</normaloff>resources/images/Pause Button.png</iconset>
+               <iconset resource="TestApp.qrc">
+                <normaloff>:/TestApp/resources/images/Pause Button.png</normaloff>:/TestApp/resources/images/Pause Button.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -983,8 +983,8 @@
                <string>...</string>
               </property>
               <property name="icon">
-               <iconset>
-                <normaloff>resources/images/Stop Circled.png</normaloff>resources/images/Stop Circled.png</iconset>
+               <iconset resource="TestApp.qrc">
+                <normaloff>:/TestApp/resources/images/Stop Circled.png</normaloff>:/TestApp/resources/images/Stop Circled.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -1019,8 +1019,8 @@
                <string>...</string>
               </property>
               <property name="icon">
-               <iconset>
-                <normaloff>resources/images/Menu.png</normaloff>resources/images/Menu.png</iconset>
+               <iconset resource="TestApp.qrc">
+                <normaloff>:/TestApp/resources/images/Menu.png</normaloff>:/TestApp/resources/images/Menu.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -1046,8 +1046,8 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>323</width>
-              <height>232</height>
+              <width>333</width>
+              <height>566</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout_4">

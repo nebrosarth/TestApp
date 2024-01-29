@@ -153,7 +153,7 @@ void TestApp::initWidgets()
 	layout1->addWidget(listWidget1);
 
 	// Section 1
-	ui::Section* properties = new ui::Section(u8"Свойства", 300, this);
+	ui::Section* properties = new ui::Section("Properties", 300, this);
 	properties->setContentLayout(*layout1);
 
 	ui->filtersLayout->addWidget(properties);
@@ -163,7 +163,7 @@ void TestApp::initWidgets()
 	QVBoxLayout* layout2 = new QVBoxLayout(this);
 	layout2->addWidget(listWidget2);
 
-	ui::Section* filtersAndSearch = new ui::Section(u8"Фильтры и поиск", 300, this);
+	ui::Section* filtersAndSearch = new ui::Section("Filters and search", 300, this);
 	filtersAndSearch->setContentLayout(*layout2);
 
 	ui->filtersLayout->addWidget(filtersAndSearch);
